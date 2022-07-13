@@ -8,6 +8,10 @@ const ReducerFunction = (state={ counter: 0 }, action) => {
         return {counter: state.counter + 1}
     }
 
+    if( action.type === 'DEC') {
+        return {counter: state.counter - 1}
+    }
+
     return state
 }
 
